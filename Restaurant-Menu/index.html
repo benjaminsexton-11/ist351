@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ben's Restaurant</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+	<body>
+	<h1>Ben's Restaurant</h1>
+	<hr>
+
+	<div id="menu">
+		<script src="script.js"></script>
+		
+		<div class="submit">
+				<button class="submit" onclick="totalIt(), hideMenu(), showPlate()"> Place Order </button>	
+				<input id="total" value="$0.00" readonly="readonly" type="text" name="total" />
+		</div>
+	</div>
+
+	<!--  This div is where the plate will be made-->
+
+	<div id="plate" style="display:none">
+		<div class="dinner">
+			<div class="imgRow" >
+				<div id="music"></div>
+				<img src="img/SaladFork.gif" class="styleFork" alt="">
+				<img src="img/Fork.gif" class="styleFork" alt="">
+				<img src="img/Platter.jpg" class="stylePlate" alt="">
+				<img src="img/Knife.gif" class="styleFork" alt="">
+				<img src="img/Spoon.gif" class="styleFork" alt="">
+				<img src="img/SoupSpoon.gif" class="styleFork" alt="">
+					<div id="foods">
+					</div>		
+					<div id="drink">
+						
+					</div>
+			</div>
+			<div class="check" id="bill">
+				<ol>
+					<li>
+						<p>
+							Bill
+						</p>	
+					</li>
+					<li>				 	
+					 	Sub-Total-> <input type="text" size="2" id="preTax" value="0"> 	
+					</li>
+					<li>
+						Tax---> <input type="text" size="2" id="tax" value="0">
+					</li>
+					<li>
+						Tip---> <input type="text" size="2" id="Tip" value="0">
+					</li>
+					<li>
+						Total-> <input type="text" size="3" id="Total" value="0">
+					</li>
+					<li>
+					
+					</li>
+					<li>
+						<button style="margin-top:15px" onClick="window.location.reload();">Next Customer</button>
+					
+				</ol>
+			</div>
+		</div>
+	</div>
+
+	</body>
+
+</html>
