@@ -215,6 +215,18 @@ button{
   font-size: 16px;
   border-radius: 15px;
 }
+.btn
+{
+    background-color: #add8e6;
+    border: black .5px solid;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+}
 #total{
   background-color: #add8e6; 
   border: black .5px solid;
